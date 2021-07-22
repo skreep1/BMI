@@ -1,9 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".HomeActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/white"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            >
+
+        </TextView>
+
+        <!--    <io.ghyeok.stickyswitch.widget.StickySwitch-->
+<!--        android:id="@+id/sticky_switch"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:ss_animationDuration="600"-->
+<!--        app:ss_iconPadding="18dp"-->
+<!--        app:ss_iconSize="22dp"-->
+<!--        app:ss_leftIcon="@drawable/ic_male"-->
+<!--        app:ss_leftText="Male"-->
+<!--        app:ss_rightIcon="@drawable/ic_female"-->
+<!--        app:ss_rightText="Female"-->
+<!--        app:ss_selectedTextSize="14sp"-->
+<!--        app:ss_sliderBackgroundColor="@color/background"-->
+<!--        app:ss_switchColor="@color/blue_color"-->
+<!--        app:ss_textColor="@color/white"-->
+<!--        app:ss_textSize="12sp"-->
+<!--        app:ss_animationType="line" />-->
+    </RelativeLayout>
+</RelativeLayout>
