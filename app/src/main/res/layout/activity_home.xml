@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/button_calculate"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
@@ -35,26 +36,66 @@
         android:id="@+id/tv_height"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="310dp"
-        android:textSize="24sp"
-        android:fontFamily="@font/roboto_bold"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="310dp"
+        android:fontFamily="@font/roboto_bold"
         android:text="@string/bmi_height"
-        android:textColor="@color/dark_color"></TextView>
+        android:textColor="@color/dark_color"
+        android:textSize="24sp"></TextView>
 
     <EditText
+        android:id="@+id/et_height"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_height"
         android:layout_margin="20dp"
+        android:backgroundTint="@color/gray_color"
         android:hint="@string/height"
-        android:backgroundTint="@color/dark_color"
         android:inputType="number|numberDecimal"
         android:singleLine="false"
-        android:textColorHint="@color/dark_color"
+        android:textColor="@color/dark_color"
+        android:textColorHint="@color/gray_color"
 
         >
 
     </EditText>
+
+    <TextView
+        android:id="@+id/tv_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_height"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/bmi_weight"
+        android:textColor="@color/dark_color"
+        android:textSize="24sp"></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_weight"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/gray_color"
+        android:hint="@string/weight"
+        android:textColor="@color/dark_color"
+        android:inputType="number|numberDecimal"
+        android:singleLine="false"
+        android:textColorHint="@color/gray_color">
+
+    </EditText>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-10dp"
+        android:backgroundTint="@color/dark_color"
+        android:text="@string/button_result"
+        app:cornerRadius="0dp">
+
+    </com.google.android.material.button.MaterialButton>
+
 
 </RelativeLayout>
