@@ -7,40 +7,54 @@
     android:background="@color/background"
     tools:context=".HomeActivity">
 
-    <RelativeLayout
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/bmi_calculator"
+        android:textColor="@color/dark_color"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="140dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/bmi_desc"
+        android:textColor="@color/dark_color"
+        android:textSize="30sp"></TextView>
+
+
+    <TextView
+        android:id="@+id/tv_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp"
+        android:textSize="24sp"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginStart="30dp"
+        android:text="@string/bmi_height"
+        android:textColor="@color/dark_color"></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_height"
+        android:layout_margin="20dp"
+        android:hint="@string/height"
+        android:backgroundTint="@color/dark_color"
+        android:inputType="number|numberDecimal"
+        android:singleLine="false"
+        android:textColorHint="@color/dark_color"
+
         >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="30dp"
-            android:fontFamily="@font/roboto"
-            android:textColor="@color/white"
-            android:text="@string/app_name"
-            android:textSize="20sp"
-            android:layout_centerInParent="true"
-            >
+    </EditText>
 
-        </TextView>
-
-        <!--    <io.ghyeok.stickyswitch.widget.StickySwitch-->
-<!--        android:id="@+id/sticky_switch"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        app:ss_animationDuration="600"-->
-<!--        app:ss_iconPadding="18dp"-->
-<!--        app:ss_iconSize="22dp"-->
-<!--        app:ss_leftIcon="@drawable/ic_male"-->
-<!--        app:ss_leftText="Male"-->
-<!--        app:ss_rightIcon="@drawable/ic_female"-->
-<!--        app:ss_rightText="Female"-->
-<!--        app:ss_selectedTextSize="14sp"-->
-<!--        app:ss_sliderBackgroundColor="@color/background"-->
-<!--        app:ss_switchColor="@color/blue_color"-->
-<!--        app:ss_textColor="@color/white"-->
-<!--        app:ss_textSize="12sp"-->
-<!--        app:ss_animationType="line" />-->
-    </RelativeLayout>
 </RelativeLayout>

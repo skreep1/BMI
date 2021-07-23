@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">BMI</string>
+    <string name="bmi_calculator">BMI Калькулятор</string>
+    <string name="bmi_desc">Рассчитай свой BMI</string>
+    <string name="bmi_weight">Вес</string>
+    <string name="bmi_height">Рост</string>
+    <string name="height">150см</string>
+    <string name="weight">50кг</string>
 </resources>
