@@ -26,22 +26,24 @@ class ResultActivity : AppCompatActivity() {
         val height = intent.getIntExtra("height", 0)
         val weight = intent.getIntExtra("weight", 0)
 
-        val bmiResult = weight / (height / 100.0).pow(2.0)
+        val bmiResult = weight * weight / height
+
+
 
         when (bmiResult) {
-            in 0.0..18.5 -> {
+            in 0..19-> {
                 binding.tvBmiText.setText(R.string.underweight)
                 binding.tvBmiResult.setText(bmiResult.toString())
             }
-            in 18.5..24.9 -> {
+            in 19..25 -> {
                 binding.tvBmiText.setText(R.string.normal)
                 binding.tvBmiResult.setText(bmiResult.toString())
             }
-            in 25.0..29.9 -> {
+            in 25..30 -> {
                 binding.tvBmiText.setText(R.string.overweight)
                 binding.tvBmiResult.setText(bmiResult.toString())
             }
-            in 30.0..50.0 -> {
+            in 35..50 -> {
                 binding.tvBmiText.setText(R.string.obese)
                 binding.tvBmiResult.setText(bmiResult.toString())
             }
