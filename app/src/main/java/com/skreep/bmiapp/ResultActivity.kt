@@ -16,12 +16,18 @@ class ResultActivity : AppCompatActivity() {
 
         val view = binding.root
         setContentView(view)
+        bmiCalculate()
 
 
         binding.icBack.setOnClickListener {
             startActivity(Intent(this@ResultActivity, HomeActivity::class.java))
 
         }
+
+
+        }
+
+    private fun bmiCalculate() {
 
         val height = intent.getIntExtra("height", 0)
         val weight = intent.getIntExtra("weight", 0)
@@ -47,11 +53,8 @@ class ResultActivity : AppCompatActivity() {
                 binding.tvBmiText.setText(R.string.obese)
                 binding.tvBmiResult.setText(bmiResult.toString())
             }
-    }
-
-
-
         }
+    }
 
     }
 
