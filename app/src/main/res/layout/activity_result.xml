@@ -1,9 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".ResultActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/result_text"
+        android:textColor="@color/dark_color">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/ic_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/ic_back"
+        android:layout_margin="30dp"
+        >
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_bmi_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/dark_color"
+        android:textSize="60sp"></TextView>
+
+    <TextView
+        android:id="@+id/tv_bmi_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="231dp"
+        android:textColor="@color/dark_color"
+        android:layout_below="@+id/tv_bmi_result"
+        android:layout_centerInParent="true"
+        android:textSize="24sp"></TextView>
+
+</RelativeLayout>

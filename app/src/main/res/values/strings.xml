@@ -7,6 +7,9 @@
     <string name="height">150см</string>
     <string name="weight">50кг</string>
     <string name="button_result">Рассчитать</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="result_text">Результат</string>
+    <string name="underweight">Недостаточный вес</string>
+    <string name="normal">Нормальный вес</string>
+    <string name="overweight">Лишний вес</string>
+    <string name="obese">Ожирение</string>
 </resources>
