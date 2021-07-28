@@ -15,4 +15,4 @@ This is my first project written in Kotlin. Using the app, the user can find out
 How to give thanks?
 You can subscribe to my social networks:
 1. [Instagram](http://instagram.com/skreep1/ "Instagram") 
-2. [Linkedin]( www.linkedin.com/in/skreep"Linkedin")
+2. [Linkedin](https://www.linkedin.com/in/skreep/ "Linkedin")
