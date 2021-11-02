@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ИМТ</string>
+    <string name="your_bmi">Твой результат</string>
+    <string name="bmi_weight">Рост</string>
+    <string name="bmi_height">Вес</string>
+    <string name="button_result">Рассчитать</string>
+    <string name="button_recalculate">Посчитать еще раз</string>
+    <string name="underweight">Недостаточный Вес</string>
+    <string name="normal">Нормальный</string>
+    <string name="overweight">Лишний Вес</string>
+    <string name="obese">Ожирение</string>
+    <string name="title">Давайте посчитаем ваш текущий ИМТ</string>
+    <string name="title_desc">Вы можете узнать, есть ли у вас избыточный, недостаточный или нормальный вес</string>
+</resources>

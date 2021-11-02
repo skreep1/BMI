@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ІМТ</string>
+    <string name="your_bmi">Ваш ІМТ</string>
+    <string name="bmi_weight">Вага</string>
+    <string name="bmi_height">Зріст</string>
+    <string name="button_result">Розрахувати</string>
+    <string name="button_recalculate">Розрахувати ще раз</string>
+    <string name="underweight">Недостатня вага</string>
+    <string name="normal">Нормальна вага</string>
+    <string name="overweight">Надмірна вага</string>
+    <string name="obese">Ожиріння</string>
+    <string name="title">Давайте підрахуємо ваш поточний ІМТ</string>
+    <string name="title_desc">Ви можете дізнатися, чи є у вас зайва вага, недостатня вага чи нормальна
+        вага</string>
+</resources>
