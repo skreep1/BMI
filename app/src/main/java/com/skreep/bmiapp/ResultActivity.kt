@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.skreep.bmiapp.databinding.ActivityResultBinding
-import kotlin.math.pow
+
 
 class ResultActivity : AppCompatActivity() {
     private lateinit var binding: ActivityResultBinding
@@ -14,10 +14,8 @@ class ResultActivity : AppCompatActivity() {
 
         binding = ActivityResultBinding.inflate(layoutInflater)
 
-        val view = binding.root
-        setContentView(view)
+        setContentView(binding.root)
         bmiCalculate()
-
 
         binding.recalculateButton.setOnClickListener {
             startActivity(Intent(this@ResultActivity, HomeActivity::class.java))
@@ -25,38 +23,34 @@ class ResultActivity : AppCompatActivity() {
         }
 
 
-        }
+    }
 
     private fun bmiCalculate() {
 
         val height = intent.getIntExtra("height", 0)
         val weight = intent.getIntExtra("weight", 0)
 
-        val bmiResult = weight * weight / height
-
-
-
-        when (bmiResult) {
-            in 0..19-> {
+        when (val result = weight * weight / height) {
+            in 0..19 -> {
                 binding.tvBmiText.setText(R.string.underweight)
-                binding.tvBmiResult.setText(bmiResult.toString())
+                binding.tvBmiResult.setText(result.toString())
             }
             in 19..25 -> {
                 binding.tvBmiText.setText(R.string.normal)
-                binding.tvBmiResult.setText(bmiResult.toString())
+                binding.tvBmiResult.setText(result.toString())
             }
             in 25..30 -> {
                 binding.tvBmiText.setText(R.string.overweight)
-                binding.tvBmiResult.setText(bmiResult.toString())
+                binding.tvBmiResult.setText(result.toString())
             }
             in 35..50 -> {
                 binding.tvBmiText.setText(R.string.obese)
-                binding.tvBmiResult.setText(bmiResult.toString())
+                binding.tvBmiResult.setText(result.toString())
             }
         }
     }
 
-    }
+}
 
 
 

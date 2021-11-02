@@ -20,8 +20,7 @@ class HomeActivity : AppCompatActivity() {
 
         binding = ActivityHomeBinding.inflate(layoutInflater)
 
-        val view = binding.root
-        setContentView(view)
+        setContentView(binding.root)
 
 
         binding.resultButton.setOnClickListener {
