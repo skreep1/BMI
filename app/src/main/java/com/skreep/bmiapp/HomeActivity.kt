@@ -3,7 +3,6 @@ package com.skreep.bmiapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.Toast
 import com.skreep.bmiapp.databinding.ActivityHomeBinding
 
@@ -19,8 +18,8 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = ActivityHomeBinding.inflate(layoutInflater)
-
-        setContentView(binding.root)
+        val view = binding.root
+        setContentView(view)
 
 
         binding.resultButton.setOnClickListener {

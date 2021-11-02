@@ -14,7 +14,8 @@ class ResultActivity : AppCompatActivity() {
 
         binding = ActivityResultBinding.inflate(layoutInflater)
 
-        setContentView(binding.root)
+        val view = binding.root
+        setContentView(view)
         bmiCalculate()
 
         binding.recalculateButton.setOnClickListener {
@@ -33,19 +34,19 @@ class ResultActivity : AppCompatActivity() {
         when (val result = weight * weight / height) {
             in 0..19 -> {
                 binding.tvBmiText.setText(R.string.underweight)
-                binding.tvBmiResult.setText(result.toString())
+                binding.tvBmiResult.text = result.toString()
             }
             in 19..25 -> {
                 binding.tvBmiText.setText(R.string.normal)
-                binding.tvBmiResult.setText(result.toString())
+                binding.tvBmiResult.text = result.toString()
             }
             in 25..30 -> {
                 binding.tvBmiText.setText(R.string.overweight)
-                binding.tvBmiResult.setText(result.toString())
+                binding.tvBmiResult.text = result.toString()
             }
-            in 35..50 -> {
+            in 30..100 -> {
                 binding.tvBmiText.setText(R.string.obese)
-                binding.tvBmiResult.setText(result.toString())
+                binding.tvBmiResult.text = result.toString()
             }
         }
     }
