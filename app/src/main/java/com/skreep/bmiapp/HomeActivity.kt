@@ -7,6 +7,9 @@ import android.widget.Button
 import android.widget.Toast
 import com.skreep.bmiapp.databinding.ActivityHomeBinding
 
+
+private const val ERROR = "Enter the data"
+
 class HomeActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityHomeBinding
@@ -21,24 +24,24 @@ class HomeActivity : AppCompatActivity() {
         setContentView(view)
 
 
-        binding.btn.setOnClickListener {
+        binding.resultButton.setOnClickListener {
 
             if (binding.etHeight.text.isEmpty() || binding.etWeight.text.isEmpty()) {
 
-                Toast.makeText(applicationContext, "Вы не указали данные", Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext, ERROR, Toast.LENGTH_SHORT).show()
 
+            } else {
+
+                val height: Int = binding.etHeight.text.toString().toInt()
+                val weight: Int = binding.etWeight.text.toString().toInt()
+
+                val intent = Intent(this, ResultActivity::class.java)
+
+                intent.putExtra("height", height)
+                intent.putExtra("weight", weight)
+
+                startActivity(intent)
             }
-
-            val height: Int = binding.etHeight.text.toString().toInt()
-            val weight: Int = binding.etWeight.text.toString().toInt()
-
-            val intent = Intent(this, ResultActivity::class.java)
-
-            intent.putExtra("height", height)
-            intent.putExtra("weight", weight)
-
-            startActivity(intent)
-
 
         }
     }

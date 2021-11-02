@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,45 +7,52 @@
     android:background="@color/background"
     tools:context=".ResultActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/roboto_bold"
-        android:text="@string/result_text"
-        android:textColor="@color/dark_color">
-
-    </TextView>
-
-    <ImageView
-        android:id="@+id/ic_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:src="@drawable/ic_back"
-        android:layout_margin="30dp"
-        >
-
-    </ImageView>
 
     <TextView
         android:id="@+id/tv_bmi_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_marginTop="269dp"
         android:fontFamily="@font/roboto_bold"
-        android:textColor="@color/dark_color"
-        android:textSize="60sp"></TextView>
+        android:text="31"
+        android:textColor="@color/purple_color"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
 
     <TextView
         android:id="@+id/tv_bmi_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="231dp"
-        android:textColor="@color/dark_color"
-        android:layout_below="@+id/tv_bmi_result"
-        android:layout_centerInParent="true"
-        android:textSize="24sp"></TextView>
+        android:layout_marginTop="8dp"
+        android:text="@string/bmi_height"
+        android:textColor="@color/text_color"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bmi_result"
+        tools:ignore="MissingConstraints">
 
-</RelativeLayout>
+    </TextView>
+
+    <Button
+        android:id="@+id/recalculate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="188dp"
+        android:backgroundTint="@color/purple_color"
+        app:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bmi_text"
+        tools:ignore="MissingConstraints"
+        android:text="@string/button_recalculate">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

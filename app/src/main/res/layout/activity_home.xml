@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/button_calculate"
@@ -10,94 +10,97 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="@font/roboto_bold"
-        android:text="@string/bmi_calculator"
-        android:textColor="@color/dark_color"
-        android:textSize="20sp">
+        android:text="@string/title"
+        android:textColor="@color/text_color"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <TextView
+        android:id="@+id/tv_title_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/title_desc"
+        android:textColor="@color/text_color"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        tools:ignore="MissingConstraints">
 
     </TextView>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="140dp"
-        android:fontFamily="@font/roboto_bold"
-        android:text="@string/bmi_desc"
-        android:textColor="@color/dark_color"
-        android:textSize="30sp"></TextView>
-
-
-    <TextView
-        android:id="@+id/tv_height"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="310dp"
-        android:fontFamily="@font/roboto_bold"
-        android:text="@string/bmi_height"
-        android:textColor="@color/dark_color"
-        android:textSize="24sp"></TextView>
 
     <EditText
         android:id="@+id/et_height"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tv_height"
-        android:layout_margin="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="16dp"
         android:backgroundTint="@color/gray_color"
-        android:hint="@string/height"
+        android:hint="@string/bmi_height"
         android:inputType="number|numberDecimal"
+        android:minHeight="48dp"
         android:singleLine="false"
-        android:textColor="@color/dark_color"
+        android:textColor="@color/text_color"
         android:textColorHint="@color/gray_color"
-
-        >
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_desc">
 
     </EditText>
-
-    <TextView
-        android:id="@+id/tv_weight"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/et_height"
-        android:layout_marginStart="30dp"
-        android:fontFamily="@font/roboto_bold"
-        android:text="@string/bmi_weight"
-        android:textColor="@color/dark_color"
-        android:textSize="24sp"></TextView>
 
     <EditText
         android:id="@+id/et_weight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tv_weight"
-        android:layout_margin="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
         android:backgroundTint="@color/gray_color"
-        android:hint="@string/weight"
-        android:textColor="@color/dark_color"
+        android:hint="@string/bmi_weight"
         android:inputType="number|numberDecimal"
+        android:minHeight="48dp"
         android:singleLine="false"
-        android:textColorHint="@color/gray_color">
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/gray_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_height">
 
     </EditText>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginBottom="-10dp"
-        android:backgroundTint="@color/dark_color"
-        android:text="@string/button_result"
-        app:cornerRadius="0dp">
+    <Button
+        android:id="@+id/result_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:backgroundTint="@color/purple_color"
+        app:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_weight"
+        tools:ignore="MissingConstraints"
+        android:text="@string/button_result">
 
-    </com.google.android.material.button.MaterialButton>
+    </Button>
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

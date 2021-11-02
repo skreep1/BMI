@@ -1,15 +1,15 @@
 <resources>
     <string name="app_name">BMI</string>
-    <string name="bmi_calculator">BMI Калькулятор</string>
-    <string name="bmi_desc">Рассчитай свой BMI</string>
-    <string name="bmi_weight">Вес</string>
-    <string name="bmi_height">Рост</string>
-    <string name="height">150см</string>
-    <string name="weight">50кг</string>
-    <string name="button_result">Рассчитать</string>
-    <string name="result_text">Результат</string>
-    <string name="underweight">Недостаточный вес</string>
-    <string name="normal">Нормальный вес</string>
-    <string name="overweight">Лишний вес</string>
-    <string name="obese">Ожирение</string>
+    <string name="your_bmi">Your BMI is</string>
+    <string name="bmi_weight">Weight</string>
+    <string name="bmi_height">Height</string>
+    <string name="button_result">Calculate</string>
+    <string name="button_recalculate">Recalculate</string>
+    <string name="underweight">Underweight</string>
+    <string name="normal">Normal</string>
+    <string name="overweight">Overweight</string>
+    <string name="obese">Obese</string>
+    <string name="title">Let’s calculate your current BMI</string>
+    <string name="title_desc">You can find out whether you are overweight, underweight, or normal
+        weight</string>
 </resources>

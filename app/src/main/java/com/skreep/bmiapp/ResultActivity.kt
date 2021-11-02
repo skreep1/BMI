@@ -19,7 +19,7 @@ class ResultActivity : AppCompatActivity() {
         bmiCalculate()
 
 
-        binding.icBack.setOnClickListener {
+        binding.recalculateButton.setOnClickListener {
             startActivity(Intent(this@ResultActivity, HomeActivity::class.java))
 
         }

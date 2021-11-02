@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Maks/AndroidStudioProjects/BmiCalculateApp/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Users/Maks/AndroidStudioProjects/BmiCalculateApp/app/src/main/res/layout/activity_result.xml" value="0.25" />
         <entry key="..\:/Users/Maks/AndroidStudioProjects/BmiCalculateApp/app/src/main/res/layout/activity_splash.xml" value="0.266304347826087" />
       </map>
     </option>
