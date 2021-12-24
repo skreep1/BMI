@@ -2,7 +2,7 @@
     <string name="app_name">BMI</string>
     <string name="your_bmi">Your BMI is</string>
     <string name="bmi_weight">Weight</string>
-    <string name="bmi_height">Height</string>
+    <string name="bmi_growth">Height</string>
     <string name="button_result">Calculate</string>
     <string name="button_recalculate">Recalculate</string>
     <string name="underweight">Underweight</string>

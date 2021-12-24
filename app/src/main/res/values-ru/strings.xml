@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">ИМТ</string>
     <string name="your_bmi">Твой результат</string>
-    <string name="bmi_weight">Рост</string>
-    <string name="bmi_height">Вес</string>
+    <string name="bmi_weight">Вес</string>
+    <string name="bmi_growth">Рост</string>
     <string name="button_result">Рассчитать</string>
     <string name="button_recalculate">Посчитать еще раз</string>
     <string name="underweight">Недостаточный Вес</string>

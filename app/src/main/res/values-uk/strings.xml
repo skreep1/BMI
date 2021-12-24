@@ -2,7 +2,7 @@
     <string name="app_name">ІМТ</string>
     <string name="your_bmi">Ваш ІМТ</string>
     <string name="bmi_weight">Вага</string>
-    <string name="bmi_height">Зріст</string>
+    <string name="bmi_growth">Зріст</string>
     <string name="button_result">Розрахувати</string>
     <string name="button_recalculate">Розрахувати ще раз</string>
     <string name="underweight">Недостатня вага</string>

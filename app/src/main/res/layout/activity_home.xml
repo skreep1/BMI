@@ -24,7 +24,9 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"></TextView>
+        tools:ignore="MissingConstraints">
+
+    </TextView>
 
     <TextView
         android:id="@+id/tv_title_desc"
@@ -52,7 +54,7 @@
         android:layout_marginTop="84dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/gray_color"
-        android:hint="@string/bmi_height"
+        android:hint="@string/bmi_growth"
         android:inputType="number|numberDecimal"
         android:minHeight="48dp"
         android:singleLine="false"
