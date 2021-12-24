@@ -1,18 +1,28 @@
 # BMI Calculator for Android 
 
-This is my first project written in Kotlin. Using the app, the user can find out his BMI (Body Mass Index).
-
-![Alt Text](https://github.com/skreep1/BMI/blob/master/gif.gif)
+![Alt Text](https://github.com/skreep1/BMI/blob/master/preview.png)
 
 
+# Description
+
+A mobile application with which you can calculate your body mass index in two clicks. Finding your body mass index will help you understand if your current weight is normal, underweight, or overweight.
+
+# Application functions
+- You indicate your height and weight.
+- The formula calculates your exact BMI.
+
+# Application languages
+
+- English
+- Ukranian 
+- Russian
+
+*Depends on what language is on the mobile phone*
 
 # Technology
-1. Kotlin
-2. ViewData
-3. Material Components for Android
+The project is written in the programming language **Kotlin** and also used the **Android SDK** and **ViewBinding**
 
-# Donate
-How to give thanks?
+# Subscribe
 You can subscribe to my social networks:
 1. [Instagram](http://instagram.com/skreep1/ "Instagram") 
 2. [Linkedin](https://www.linkedin.com/in/skreep/ "Linkedin")
