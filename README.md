@@ -22,6 +22,10 @@ A mobile application with which you can calculate your body mass index in two cl
 # Technology
 The project is written in the programming language **Kotlin** and also used the **Android SDK** and **ViewBinding**
 
+# Download in Google Play
+
+[Google Play](https://play.google.com/store/apps/details?id=com.skreep.bmiapp "Google Play")
+
 # Subscribe
 You can subscribe to my social networks:
 1. [Instagram](http://instagram.com/skreep1/ "Instagram") 
